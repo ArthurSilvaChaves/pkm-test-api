@@ -1,4 +1,5 @@
 body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,5 +7,26 @@ body{
 }
 
 .container{
+    gap: 10px;
+    margin: 10px;
+    padding: 20px;
+    border: 6.7px black solid;
+    border-radius: 50px;
+    display: flex;
     background-color: aliceblue;
+}
+
+.container button{
+    font-size: 1.5rem;
+    border: none;
+}
+
+.container img{
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+.container input{
+    border: none;
+    font-size: 1.5rem;
 }
