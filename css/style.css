@@ -1,12 +1,13 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right,red,black,white);
 }
 
-.container{
+.nameimg-container{
+    width: 100%;
     gap: 10px;
     margin: 10px;
     padding: 20px;
@@ -16,17 +17,40 @@ body{
     background-color: aliceblue;
 }
 
-.container button{
+.nameimg-container button{
+    border-radius: 8%;
     font-size: 1.5rem;
     border: none;
+    transition: 250ms;
 }
 
-.container img{
+.nameimg-container button:hover{
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.nameimg-container button:active{
+    box-shadow: none;
+}
+
+.nameimg-container img{
     border: 2px black solid;
     border-radius: 10px;
 }
 
-.container input{
+.nameimg-container input{
     border: none;
     font-size: 1.5rem;
+}
+
+/*segundo container*/
+
+.container2{
+    width: 100%;
+    gap: 10px;
+    margin: 10px;
+    padding: 20px;
+    border: 6.7px black solid;
+    border-radius: 50px;
+    display: flex;
+    background-color: aliceblue;
 }
