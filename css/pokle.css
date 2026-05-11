@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(0, 0, 255);
+}
+
+.game-content{
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    padding: 40px;
+    margin: 10px;
+    gap: 10px;
+    display: grid;   
+}
+
+.game-content button{
+    cursor: pointer;
+    padding: 10px;
+    width: max-content;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: 250ms;
+}
+
+.game-content button:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.817);
+}
+
+.game-content button:active{
+    box-shadow: none;
+}
+
+.game-content input{
+    width: max-content;
+}

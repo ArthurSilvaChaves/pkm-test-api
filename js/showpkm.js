@@ -1,5 +1,9 @@
 function test(dados){
-    console.log(dados.moves[1].move.name)
+    // for(let i = 0;i < dados.moves.length;i++){
+    //     console.log(dados.moves[i].move.name);
+    // }
+
+    console.log(dados)
 }
 
 function showType(dados,p){
@@ -18,11 +22,14 @@ function showAbilities(dados,p){
     }
 }
 
+
+
 async function showpkm(){
     pokemon = document.getElementById("pkm").value;
     nomePokemon = document.getElementById("name");
     tipoPokemon = document.getElementById("type");
     habilidadesPokemon = document.getElementById("abilities");
+    imgpkm = document.getElementById("img");
 
     try{
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
@@ -32,6 +39,7 @@ async function showpkm(){
         }
         const dados = await res.json();
         
+        test(dados);
 
         nomePokemon.textContent = `Pokémon name: ${dados.name}`;
         
@@ -39,9 +47,16 @@ async function showpkm(){
     
         showAbilities(dados,habilidadesPokemon)
 
-        imgpkm = document.getElementById("img").src = dados.sprites.front_default;
+        imgpkm.src = dados.sprites.front_default;
     
-        test(dados);
+        imgpkm.addEventListener("mouseenter", () =>{
+            imgpkm.src = dados.sprites.front_shiny;
+        });
+
+        imgpkm.addEventListener("mouseleave", () => {
+            imgpkm.src = dados.sprites.front_default;
+        });
+
     } catch(erro){
         pokemon.textContent = erro;
     }

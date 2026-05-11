@@ -1,15 +1,13 @@
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: grid;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(to right,red,black,white);
 }
 
-.nameimg-container{
-    width: 100%;
-    gap: 10px;
+.pokemon1{
+    display: grid;
     margin: 10px;
+    gap: 10px;
     padding: 20px;
     border: 6.7px black solid;
     border-radius: 50px;
@@ -17,40 +15,38 @@ body{
     background-color: aliceblue;
 }
 
-.nameimg-container button{
+.pokemon1 button{
     border-radius: 8%;
     font-size: 1.5rem;
     border: none;
     transition: 250ms;
 }
 
-.nameimg-container button:hover{
-    box-shadow: 5px 5px 5px 5px black;
+.pokemon1 button:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.583);
 }
 
-.nameimg-container button:active{
+.pokemon1 button:active{
     box-shadow: none;
 }
 
-.nameimg-container img{
+.pokemon1 img{
+    cursor: pointer;
     border: 2px black solid;
     border-radius: 10px;
 }
 
-.nameimg-container input{
+.pokemon1 input{
     border: none;
     font-size: 1.5rem;
 }
 
-/*segundo container*/
-
-.container2{
-    width: 100%;
-    gap: 10px;
-    margin: 10px;
-    padding: 20px;
-    border: 6.7px black solid;
-    border-radius: 50px;
+.pokemon1 p{
     display: flex;
-    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    border: 2px black solid;
+    padding: 10px;
+    border-radius: 10px;
 }
