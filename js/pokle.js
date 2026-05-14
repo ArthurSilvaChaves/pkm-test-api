@@ -66,7 +66,6 @@ function showtips() {
         dica.textContent = `height: ${pokemonSecreto.height}`;
     } else if(dicas === 3){
         dica.textContent = `pokedex number: ${pokemonSecreto.id}`;
-        dicas = 0;
     } else{
         dicas = 0;
     }
@@ -77,6 +76,11 @@ document.getElementById("tentativa").addEventListener("keydown", (e) => {
         verificar()
     }
 })
+
+function giveup(){
+    resultado.textContent = `the pokemon was ${pokemonSecreto.name}`
+    imagem.style.filter = "brightness(1)"
+}
 
 game()
 

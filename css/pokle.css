@@ -27,6 +27,30 @@ body{
 }
 
 button{
+    padding: 10px;
     font-size: 2rem;
     cursor: pointer;
+    transition: 250ms;
+    border: none;
+    border-radius: 50px;
+}
+
+button:hover{
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+button:active{
+    box-shadow: none;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#pkmImg{
+    transition: 0.5s;
 }
